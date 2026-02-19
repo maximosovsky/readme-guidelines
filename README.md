@@ -97,6 +97,12 @@
 
 <div align="center">
 
+## 🗺️ Roadmap
+
+[Аудит README для всех репозиториев →](ROADMAP.md)
+
+---
+
 ## 🤝 Contributing
 
 Fork → `feature/name` → PR
