@@ -4,7 +4,7 @@
 
 ![Markdown](https://img.shields.io/badge/Markdown-000000?style=for-the-badge&logo=markdown&logoColor=white)
 ![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
-![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)
+![License](https://img.shields.io/badge/License-CC_BY--SA_4.0-lightgrey?style=for-the-badge)
 
 **Чеклист и шаблон для создания красивых README на GitHub**
 
@@ -34,6 +34,7 @@
 | **Roadmap** | Показывает, что проект живой и развивается | `- [ ] Feature A  - [x] Feature B` |
 | **GitHub Alerts** | `> [!NOTE]` / `> [!WARNING]` — цветные блоки вместо обычных цитат | Поддержка с 2023, рендерятся на GitHub |
 | **Table of Contents** | Навигация по секциям для длинных README (или inline-ссылки) | Для README > 5 секций |
+| **Без знака ©** | Не использовать символ копирайта — чище и современнее | `Maxim Osovsky. Licensed under CC BY-SA 4.0.` |
 
 ---
 
@@ -48,6 +49,7 @@
 - **Захардкоженные секреты** в примерах — даже `sk_test_...` смущает ревьюеров
 - **Нет лицензии** — юридически непонятно, можно ли использовать код
 - **Dead links** — битые ссылки на demo/docs убивают доверие, проверять перед пушем
+- **Знак ©** — не использовать, просто имя + лицензия выглядит чище
 
 ---
 
@@ -105,6 +107,6 @@ Fork → `feature/name` → PR
 
 ## 📄 License
 
-MIT · [maximosovsky](https://github.com/maximosovsky)
+Maxim Osovsky. Licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
 
 </div>
