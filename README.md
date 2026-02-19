@@ -97,6 +97,38 @@
 | [GitHub Alerts](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#alerts) | `[!NOTE]`, `[!WARNING]` etc. |
 | [Badgen](https://badgen.net) | shields.io alternative |
 | [Contributor Covenant](https://www.contributor-covenant.org) | Code of Conduct standard |
+| [llms.txt](https://llmstxt.org/) | Standard for LLM-readable project docs |
+
+---
+
+## 📋 Template
+
+> **Start here** — copy, rename to `README.md`, fill in the `{PLACEHOLDERS}`.
+
+➡️ **[TEMPLATE.md](TEMPLATE.md)**
+
+---
+
+## 🏆 Real-World Examples
+
+Projects built with these guidelines:
+
+| Project | What it is | README |
+|---------|-----------|--------|
+| **WallPlan** | Multi-year wall calendar generator | [View](https://github.com/maximosovsky/wallplan) |
+| **LifeLine** | Lifetime visualization on paper | [View](https://github.com/maximosovsky/lifeline) |
+| **DelayedPopup** | Chat-like popup with Stripe payments | [View](https://github.com/maximosovsky/DelayedPopup) |
+| **TeleInviter** | Telegram meeting scheduler bot | [View](https://github.com/maximosovsky/teleinviter) |
+
+---
+
+## 🤖 LLM-Ready Docs
+
+| File | Purpose |
+|------|---------|
+| [llms.txt](llms.txt) | Short project card for LLM discovery |
+| [llms-full.txt](llms-full.txt) | Complete guidelines as LLM instruction |
+| [README_GUIDELINES.md](README_GUIDELINES.md) | Structured rules for AI-assisted README generation |
 
 ---
 
