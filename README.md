@@ -40,6 +40,7 @@
 | **No © sign** | Don't use the copyright symbol — cleaner and more modern. Author name always links to LinkedIn | `[Maxim Osovsky](https://linkedin.com/in/osovsky). Licensed under CC BY-SA 4.0.` |
 | **llms.txt files** | Machine-readable project summary for LLMs — `llms.txt` (short) + `llms-full.txt` (detailed) | [llms.txt standard](https://llmstxt.org/) |
 | **CI link checker** | GitHub Actions workflow that auto-checks for dead links and markdown errors on every push | Free, runs on GitHub servers |
+| **GitHub About** | Description + URL + Topics in repo About (⚙️) — improves discoverability and first impression | Description = tagline, Topics = `react`, `miro-sdk` etc. |
 
 ---
 
@@ -57,6 +58,7 @@
 - **© sign** — don't use it, just name + license looks cleaner
 - **No llms.txt** — LLMs can't discover or understand the project without machine-readable docs
 - **No CI checks** — dead links and broken badges go unnoticed until someone reports them
+- **Empty About section** — no description, no URL, no topics. Repo looks abandoned and won't appear in search
 
 ---
 
@@ -126,6 +128,7 @@ jobs:
     ---
 12. 📄 License + author
 13. llms.txt + llms-full.txt (root, plain text)
+14. GitHub About (⚙️): Description = tagline, Website = demo URL, Topics = keywords
 ```
 
 ---
@@ -166,6 +169,7 @@ Projects built with these guidelines:
 | **LifeLine** | Lifetime visualization on paper | [View](https://github.com/maximosovsky/lifeline) |
 | **DelayedPopup** | Chat-like popup with Stripe payments | [View](https://github.com/maximosovsky/DelayedPopup) |
 | **TeleInviter** | Telegram meeting scheduler bot | [View](https://github.com/maximosovsky/teleinviter) |
+| **WallPlan Miro** | Gantt calendar generator for Miro boards | [View](https://github.com/maximosovsky/wallplan-miro) |
 
 ---
 

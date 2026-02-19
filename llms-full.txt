@@ -27,6 +27,8 @@ A checklist and template for crafting professional GitHub READMEs. This guide co
 15. `## 🤝 Contributing` — Fork → `feature/name` → PR
 16. `---`
 17. `## 📄 License` — `[Author Name](https://linkedin.com/in/profile). Licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).`
+18. `llms.txt` + `llms-full.txt` — plain text files at root for LLM discoverability
+19. **GitHub About** — fill in the repo About section (⚙️ gear icon): `Description` = tagline from README, `Website` = live demo URL, `Topics` = 5–10 lowercase keywords for discoverability
 
 ## Techniques
 
@@ -50,6 +52,7 @@ A checklist and template for crafting professional GitHub READMEs. This guide co
 | Table of Contents | Section navigation for long READMEs | For READMEs > 5 sections |
 | No © sign | Don't use copyright symbol. Author name links to LinkedIn | `[Name](linkedin). Licensed under CC BY-SA 4.0.` |
 | llms.txt files | Machine-readable project summary for LLMs | llms.txt (short) + llms-full.txt (detailed) |
+| GitHub About | Description + URL + Topics in repo About (⚙️) — improves discoverability | Description = tagline, Topics = `react`, `miro-sdk` etc. |
 
 ## Formatting Rules
 
@@ -65,6 +68,7 @@ A checklist and template for crafting professional GitHub READMEs. This guide co
 - If README has > 5 sections: add inline nav links under the header
 - If project has a screenshot: embed it centered, `width="600"` or smaller
 - Always include llms.txt and llms-full.txt for LLM discoverability
+- About section: Description = README tagline, Website = demo URL, Topics = 5–10 lowercase keywords (tech stack + domain)
 
 ## Anti-Patterns (never do)
 
@@ -78,6 +82,7 @@ A checklist and template for crafting professional GitHub READMEs. This guide co
 - Technical architecture docs in README — use separate ARCHITECTURE.md
 - © symbol — use plain `Author Name. Licensed under ...`
 - No llms.txt — LLMs can't discover or understand the project
+- Empty About section — no description, no URL, no topics. Repo looks abandoned and won't appear in search
 
 ## llms.txt Standard
 

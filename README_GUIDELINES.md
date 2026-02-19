@@ -22,6 +22,7 @@ Use these rules when generating or reviewing a GitHub README.
 16. `---`
 17. `## 📄 License` — `[Author Name](https://linkedin.com/in/profile). Licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).`
 18. `llms.txt` + `llms-full.txt` — plain text files at root for LLM discoverability
+19. **GitHub About** — fill in the repo About section (⚙️ gear icon): `Description` = tagline from README, `Website` = live demo URL, `Topics` = 5–10 lowercase keywords for discoverability
 
 ## Formatting Rules
 
@@ -36,6 +37,7 @@ Use these rules when generating or reviewing a GitHub README.
 - File tree: use ASCII art in a fenced code block
 - If README has > 5 sections: add inline nav links under the header
 - If project has a screenshot: embed it centered, `width="600"` or smaller
+- About section: Description = README tagline, Website = demo URL, Topics = 5–10 lowercase keywords (tech stack + domain)
 
 ## Anti-Patterns (never do)
 
@@ -48,6 +50,7 @@ Use these rules when generating or reviewing a GitHub README.
 - Dead links — verify all URLs
 - Technical architecture docs in README — use separate ARCHITECTURE.md
 - © symbol — use plain `Author Name. Licensed under ...`
+- Empty About section — no description, no URL, no topics. Repo looks abandoned and won't appear in search
 
 ## Badge Examples
 
