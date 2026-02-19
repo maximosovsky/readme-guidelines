@@ -38,6 +38,7 @@
 | **Table of Contents** | Section navigation for long READMEs (or inline links) | For READMEs > 5 sections |
 | **No © sign** | Don't use the copyright symbol — cleaner and more modern. Author name always links to LinkedIn | `[Maxim Osovsky](https://linkedin.com/in/osovsky). Licensed under CC BY-SA 4.0.` |
 | **llms.txt files** | Machine-readable project summary for LLMs — `llms.txt` (short) + `llms-full.txt` (detailed) | [llms.txt standard](https://llmstxt.org/) |
+| **CI link checker** | GitHub Actions workflow that auto-checks for dead links and markdown errors on every push | Free, runs on GitHub servers |
 
 ---
 
@@ -54,6 +55,48 @@
 - **Dead links** — broken links to demo/docs kill trust, verify before pushing
 - **© sign** — don't use it, just name + license looks cleaner
 - **No llms.txt** — LLMs can't discover or understand the project without machine-readable docs
+- **No CI checks** — dead links and broken badges go unnoticed until someone reports them
+
+---
+
+## 🔄 CI: Auto-Check Your README
+
+> Optional but recommended. Add one file to your repo and GitHub will check every README on push — free, no servers needed.
+
+<details>
+<summary>📋 Ready-to-use workflow (click to expand)</summary>
+
+Create `.github/workflows/readme-lint.yml`:
+
+```yaml
+name: README Lint
+on: [push, pull_request]
+jobs:
+  links:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: lycheeverse/lychee-action@v1
+        with:
+          args: --verbose *.md
+  markdown:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: DavidAnson/markdownlint-cli2-action@v16
+        with:
+          globs: "*.md"
+```
+
+**What it checks:**
+- 🔗 Dead links (URLs returning 404)
+- 🏷️ Broken badge images
+- 📝 Markdown syntax errors
+- ✅ Result: green checkmark or red X on your repo page
+
+**Cost:** $0 for public repos, 2 000 free minutes/month for private.
+
+</details>
 
 ---
 
