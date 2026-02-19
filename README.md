@@ -34,7 +34,7 @@
 | **Roadmap** | Показывает, что проект живой и развивается | `- [ ] Feature A  - [x] Feature B` |
 | **GitHub Alerts** | `> [!NOTE]` / `> [!WARNING]` — цветные блоки вместо обычных цитат | Поддержка с 2023, рендерятся на GitHub |
 | **Table of Contents** | Навигация по секциям для длинных README (или inline-ссылки) | Для README > 5 секций |
-| **Без знака ©** | Не использовать символ копирайта — чище и современнее | `Maxim Osovsky. Licensed under CC BY-SA 4.0.` |
+| **Без знака ©** | Не использовать символ копирайта — чище и современнее. Имя автора — всегда ссылка на LinkedIn | `[Maxim Osovsky](https://linkedin.com/in/osovsky). Licensed under CC BY-SA 4.0.` |
 
 ---
 
@@ -113,6 +113,6 @@ Fork → `feature/name` → PR
 
 ## 📄 License
 
-Maxim Osovsky. Licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+[Maxim Osovsky](https://www.linkedin.com/in/osovsky/). Licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
 
 </div>
