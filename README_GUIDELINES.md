@@ -1,72 +1,66 @@
-# Принципы красивого README на GitHub
+# README Guidelines — LLM Reference
 
-## ✅ Что использовать
+Use these rules when generating or reviewing a GitHub README.
 
-| Приём | Что делает | Пример |
-|-------|-----------|--------|
-| **Центрированный заголовок** | `<div align="center">` — логотип + название по центру, создаёт «обложку» | ⏳ LifeLine / 🔍 xyzz.me |
-| **Shields.io бейджи** | Яркие цветные плашки со статусом, лицензией, стеком | `![React](https://img.shields.io/badge/React-18-61DAFB?style=for-the-badge&logo=react)` |
-| **Emoji в заголовках секций** | Визуальная навигация — глаз цепляется за иконки | 💡 Concept · ✨ Features · 🚀 Quick Start |
-| **Tagline (слоган)** | Одна жирная строка под названием — суть проекта за 1 предложение | *"See your entire life on paper"* |
-| **Превью-картинка** | Сразу показывает, как выглядит продукт | `<img src="preview.png" width="600">` |
-| **Таблицы фич** | Структурированный список возможностей, легко сканировать | Feature \| Description |
-| **Collapsible секции** | `<details>` — прячут второстепенную info (env vars, build, лекции) | Не перегружают README |
-| **Блок-цитата** | `>` — философия / концепция проекта, визуально выделяется | *"Lines and structures are a language..."* |
-| **Горизонтальные разделители** | `---` между секциями — чёткое визуальное разделение | |
-| **ASCII-дерево структуры** | Мгновенный обзор архитектуры в коде | `client/ ├── pages/` |
-| **Inline навигация** | Ссылки-якоря под заголовком — быстрый доступ к секциям | `Quick Start · Features · Docs` |
-| **Animated GIF / видео** | Демонстрация работы лучше скриншота — показывает flow | `![demo](demo.gif)` |
-| **Contributing секция** | Привлекает контрибьюторов, задаёт стандарт: fork → branch → PR | Fork → `feature/name` → PR |
-| **Roadmap** | Показывает, что проект живой и развивается | `- [ ] Feature A  - [x] Feature B` |
-| **GitHub Alerts** | `> [!NOTE]` / `> [!WARNING]` — цветные блоки вместо обычных цитат | Поддержка с 2023, рендерятся на GitHub |
-| **Table of Contents** | Навигация по секциям для длинных README (или inline-ссылки) | Для README > 5 секций |
-| **Без знака ©** | Не использовать символ копирайта — чище и современнее. Имя автора — всегда ссылка на LinkedIn | `[Maxim Osovsky](https://linkedin.com/in/osovsky). Licensed under CC BY-SA 4.0.` |
+## Structure (in order)
 
-## ❌ Чего избегать
+1. `<div align="center">` — project emoji + name as `# heading`, shields.io badges (`style=for-the-badge`), bold one-line tagline, `</div>`
+2. Blockquote `>` — project concept / philosophy, 1–2 sentences
+3. `<div align="center">` — preview image or GIF (`width="600"`), inline nav links (`Quick Start · Features · Docs`), `</div>`
+4. `---`
+5. `## 💡 Concept` — expanded explanation of the idea
+6. `---`
+7. `## ✨ Features` — markdown table: Feature | Description
+8. `---`
+9. `## 🚀 Quick Start` — 3–5 lines of code to run the project. Use `<details>` for advanced config and env variables
+10. `---`
+11. `## 🏗️ Tech Stack` — markdown table: Layer | Technology. Follow with ASCII file tree in a code block
+12. `---`
+13. `## 🗺️ Roadmap` — checklist: `- [ ]` planned, `- [x]` done
+14. `---`
+15. `## 🤝 Contributing` — Fork → `feature/name` → PR
+16. `---`
+17. `## 📄 License` — `[Author Name](https://linkedin.com/in/profile). Licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).`
 
-- **Стена текста** без форматирования — никто не читает сплошной текст
-- **Нет картинки/превью** — не понятно, как выглядит проект
-- **Слишком длинный README** без `<details>` для второстепенных секций
-- **Нет бейджей** — выглядит как незаконченный проект
-- **Нет Quick Start** — люди уходят, если не понятно, как запустить
-- **Техническая документация в README** — выносить в ARCHITECTURE.md, MANUAL.md
-- **Захардкоженные секреты** в примерах — даже `sk_test_...` смущает ревьюеров
-- **Нет лицензии** — юридически непонятно, можно ли использовать код
-- **Dead links** — битые ссылки на demo/docs убивают доверие, проверять перед пушем
-- **Знак ©** — не использовать, просто имя + лицензия выглядит чище
+## Formatting Rules
 
-## 📐 Структура идеального README
+- Use `---` horizontal dividers between every major section
+- Use emoji prefixes on all `##` headings
+- Badges: always `style=for-the-badge` with `&logo=` parameter
+- License badge: `![License](https://img.shields.io/badge/License-CC_BY--SA_4.0-lightgrey?style=for-the-badge)`
+- Author name in license: always a clickable link to LinkedIn, never GitHub
+- Never use the © copyright symbol
+- Use `<details><summary>` for secondary info (env vars, build steps, advanced config)
+- Feature lists: prefer tables over bullet lists
+- File tree: use ASCII art in a fenced code block
+- If README has > 5 sections: add inline nav links under the header
+- If project has a screenshot: embed it centered, `width="600"` or smaller
 
-```
- 1. Центрированный заголовок + логотип
- 2. Бейджи (статус, лицензия, стек)
- 3. Слоган (1 строка)
- 4. Inline навигация (Quick Start · Features · Docs)
- 5. Превью-скриншот / GIF
-    ---
- 6. 💡 Concept / Идея (блок-цитата + пояснение)
-    ---
- 7. ✨ Features (таблица)
-    ---
- 8. 🚀 Quick Start (3 строки кода)
-    <details> Продвинутая настройка </details>
-    <details> Environment variables </details>
-    ---
- 9. 🏗️ Tech Stack (таблица + дерево файлов)
-    ---
-10. 🗺️ Roadmap (чеклист планов)
-    ---
-11. 🤝 Contributing (fork → branch → PR)
-    ---
-12. 📄 License + автор
+## Anti-Patterns (never do)
+
+- Wall of text without formatting
+- No preview image
+- No badges
+- No Quick Start section
+- Hardcoded secrets in examples (even `sk_test_...`)
+- Missing license
+- Dead links — verify all URLs
+- Technical architecture docs in README — use separate ARCHITECTURE.md
+- © symbol — use plain `Author Name. Licensed under ...`
+
+## Badge Examples
+
+```markdown
+![React](https://img.shields.io/badge/React-18-61DAFB?style=for-the-badge&logo=react&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-20-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
+![License](https://img.shields.io/badge/License-CC_BY--SA_4.0-lightgrey?style=for-the-badge)
 ```
 
-## 🔗 Полезные ресурсы
+## License Block Template
 
-- [shields.io](https://shields.io) — генератор бейджей
-- [Simple Icons](https://simpleicons.org) — логотипы для бейджей
-- [readme.so](https://readme.so) — визуальный конструктор README
-- [GitHub Docs: Basic formatting](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
-- [GitHub Alerts syntax](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#alerts) — `[!NOTE]`, `[!WARNING]` и др.
-- [Badgen](https://badgen.net) — альтернатива shields.io, быстрее
-- [Contributor Covenant](https://www.contributor-covenant.org) — стандарт Code of Conduct для open-source
+```markdown
+## 📄 License
+
+[Author Name](https://www.linkedin.com/in/profile/). Licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+```
