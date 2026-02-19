@@ -1,18 +1,4 @@
-<div align="center">
-
-# 📐 README Guidelines
-
-![Markdown](https://img.shields.io/badge/Markdown-000000?style=for-the-badge&logo=markdown&logoColor=white)
-![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
-![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)
-
-**Чеклист и шаблон для создания красивых README на GitHub**
-
-</div>
-
-> Хороший README — это обложка книги. Если он скучный, никто не откроет проект. Этот гайд собирает проверенные приёмы, которые делают README профессиональным и привлекательным.
-
----
+# Принципы красивого README на GitHub
 
 ## ✅ Что использовать
 
@@ -35,8 +21,6 @@
 | **GitHub Alerts** | `> [!NOTE]` / `> [!WARNING]` — цветные блоки вместо обычных цитат | Поддержка с 2023, рендерятся на GitHub |
 | **Table of Contents** | Навигация по секциям для длинных README (или inline-ссылки) | Для README > 5 секций |
 
----
-
 ## ❌ Чего избегать
 
 - **Стена текста** без форматирования — никто не читает сплошной текст
@@ -48,8 +32,6 @@
 - **Захардкоженные секреты** в примерах — даже `sk_test_...` смущает ревьюеров
 - **Нет лицензии** — юридически непонятно, можно ли использовать код
 - **Dead links** — битые ссылки на demo/docs убивают доверие, проверять перед пушем
-
----
 
 ## 📐 Структура идеального README
 
@@ -77,34 +59,12 @@
 12. 📄 License + автор
 ```
 
----
-
 ## 🔗 Полезные ресурсы
 
-| Ресурс | Описание |
-|--------|----------|
-| [shields.io](https://shields.io) | Генератор бейджей |
-| [Simple Icons](https://simpleicons.org) | Логотипы для бейджей |
-| [readme.so](https://readme.so) | Визуальный конструктор README |
-| [GitHub Docs: Formatting](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax) | Официальная документация |
-| [GitHub Alerts](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#alerts) | `[!NOTE]`, `[!WARNING]` и др. |
-| [Badgen](https://badgen.net) | Альтернатива shields.io |
-| [Contributor Covenant](https://www.contributor-covenant.org) | Стандарт Code of Conduct |
-
----
-
-<div align="center">
-
-## 🤝 Contributing
-
-Fork → `feature/name` → PR
-
-Добавляйте свои находки в таблицу приёмов!
-
----
-
-## 📄 License
-
-MIT · [maximosovsky](https://github.com/maximosovsky)
-
-</div>
+- [shields.io](https://shields.io) — генератор бейджей
+- [Simple Icons](https://simpleicons.org) — логотипы для бейджей
+- [readme.so](https://readme.so) — визуальный конструктор README
+- [GitHub Docs: Basic formatting](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
+- [GitHub Alerts syntax](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#alerts) — `[!NOTE]`, `[!WARNING]` и др.
+- [Badgen](https://badgen.net) — альтернатива shields.io, быстрее
+- [Contributor Covenant](https://www.contributor-covenant.org) — стандарт Code of Conduct для open-source
