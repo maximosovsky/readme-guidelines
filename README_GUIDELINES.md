@@ -21,6 +21,7 @@ Use these rules when generating or reviewing a GitHub README.
 15. `## 🤝 Contributing` — Fork → `feature/name` → PR
 16. `---`
 17. `## 📄 License` — `[Author Name](https://linkedin.com/in/profile). Licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).`
+18. `llms.txt` + `llms-full.txt` — plain text files at root for LLM discoverability
 
 ## Formatting Rules
 

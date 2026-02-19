@@ -1,0 +1,127 @@
+# README Guidelines — Complete Reference
+
+## Overview
+
+A checklist and template for crafting professional GitHub READMEs. This guide codifies proven techniques that make project documentation visually appealing, easy to scan, and informative. Follows a strict structure with centered headers, shields.io badges, blockquote concepts, feature tables, and collapsible sections.
+
+- **Author**: Maxim Osovsky (https://www.wikidata.org/wiki/Q107189449)
+- **URL**: https://github.com/maximosovsky/readme-guidelines
+- **License**: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+
+## README Structure (in order)
+
+1. `<div align="center">` — project emoji + name as `# heading`, shields.io badges (`style=for-the-badge`), bold one-line tagline, `</div>`
+2. Blockquote `>` — project concept / philosophy, 1–2 sentences
+3. `<div align="center">` — preview image or GIF (`width="600"`), inline nav links (`Quick Start · Features · Docs`), `</div>`
+4. `---`
+5. `## 💡 Concept` — expanded explanation of the idea
+6. `---`
+7. `## ✨ Features` — markdown table: Feature | Description
+8. `---`
+9. `## 🚀 Quick Start` — 3–5 lines of code to run the project. Use `<details>` for advanced config and env variables
+10. `---`
+11. `## 🏗️ Tech Stack` — markdown table: Layer | Technology. Follow with ASCII file tree in a code block
+12. `---`
+13. `## 🗺️ Roadmap` — checklist: `- [ ]` planned, `- [x]` done
+14. `---`
+15. `## 🤝 Contributing` — Fork → `feature/name` → PR
+16. `---`
+17. `## 📄 License` — `[Author Name](https://linkedin.com/in/profile). Licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).`
+
+## Techniques
+
+| Technique | What it Does | Example |
+|-----------|-------------|---------|
+| Centered header | `<div align="center">` — logo + title centered, creates a "cover" | ⏳ LifeLine / 🔍 xyzz.me |
+| Shields.io badges | Bright colored badges with status, license, tech stack | `![React](https://img.shields.io/badge/React-18-61DAFB?style=for-the-badge&logo=react)` |
+| Emoji section headers | Visual navigation — eyes catch icons instantly | 💡 Concept · ✨ Features · 🚀 Quick Start |
+| Tagline | One bold line under the title — project essence in 1 sentence | *"See your entire life on paper"* |
+| Preview image | Instantly shows what the product looks like | `<img src="preview.png" width="600">` |
+| Feature tables | Structured feature list, easy to scan | Feature \| Description |
+| Collapsible sections | `<details>` — hides secondary info (env vars, build) | Keeps README uncluttered |
+| Blockquote | `>` — project philosophy / concept, visually stands out | *"Lines and structures are a language..."* |
+| Horizontal dividers | `---` between sections — clear visual separation | |
+| ASCII tree structure | Instant architecture overview in code | `client/ ├── pages/` |
+| Inline navigation | Anchor links under header — quick access to sections | `Quick Start · Features · Docs` |
+| Animated GIF / video | Demo in action beats a screenshot — shows the flow | `![demo](demo.gif)` |
+| Contributing section | Attracts contributors, sets standards: fork → branch → PR | Fork → `feature/name` → PR |
+| Roadmap | Shows the project is alive and evolving | `- [ ] Feature A  - [x] Feature B` |
+| GitHub Alerts | `> [!NOTE]` / `> [!WARNING]` — colored blocks | Supported since 2023 |
+| Table of Contents | Section navigation for long READMEs | For READMEs > 5 sections |
+| No © sign | Don't use copyright symbol. Author name links to LinkedIn | `[Name](linkedin). Licensed under CC BY-SA 4.0.` |
+| llms.txt files | Machine-readable project summary for LLMs | llms.txt (short) + llms-full.txt (detailed) |
+
+## Formatting Rules
+
+- Use `---` horizontal dividers between every major section
+- Use emoji prefixes on all `##` headings
+- Badges: always `style=for-the-badge` with `&logo=` parameter
+- License badge: `![License](https://img.shields.io/badge/License-CC_BY--SA_4.0-lightgrey?style=for-the-badge)`
+- Author name in license: always a clickable link to LinkedIn, never GitHub
+- Never use the © copyright symbol
+- Use `<details><summary>` for secondary info (env vars, build steps, advanced config)
+- Feature lists: prefer tables over bullet lists
+- File tree: use ASCII art in a fenced code block
+- If README has > 5 sections: add inline nav links under the header
+- If project has a screenshot: embed it centered, `width="600"` or smaller
+- Always include llms.txt and llms-full.txt for LLM discoverability
+
+## Anti-Patterns (never do)
+
+- Wall of text without formatting
+- No preview image
+- No badges
+- No Quick Start section
+- Hardcoded secrets in examples (even `sk_test_...`)
+- Missing license
+- Dead links — verify all URLs
+- Technical architecture docs in README — use separate ARCHITECTURE.md
+- © symbol — use plain `Author Name. Licensed under ...`
+- No llms.txt — LLMs can't discover or understand the project
+
+## llms.txt Standard
+
+Every project should include two files at the root:
+
+### llms.txt (short card, ~15 lines)
+```
+# Project Name
+
+> One-line description.
+
+## About
+
+One paragraph summary.
+
+- Author: [Name](wikidata-url)
+- URL: https://project-url
+- License: CC BY-SA 4.0
+
+## Docs
+
+- [Full documentation](url/llms-full.txt): Description
+```
+
+### llms-full.txt (detailed, 50–200 lines)
+- Overview with project history
+- Complete feature list with details
+- Architecture (file table)
+- Technical details
+- Roadmap
+
+## Badge Examples
+
+```markdown
+![React](https://img.shields.io/badge/React-18-61DAFB?style=for-the-badge&logo=react&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-20-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
+![License](https://img.shields.io/badge/License-CC_BY--SA_4.0-lightgrey?style=for-the-badge)
+```
+
+## License Block Template
+
+```markdown
+## 📄 License
+
+[Author Name](https://www.linkedin.com/in/profile/). Licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+```

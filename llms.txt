@@ -1,0 +1,15 @@
+# README Guidelines
+
+> Checklist and template for crafting professional GitHub READMEs with badges, structure, and LLM-ready documentation.
+
+## About
+
+A living reference for writing beautiful, well-structured GitHub READMEs. Covers centered headers, Shields.io badges (for-the-badge style), taglines, blockquote concepts, feature tables, collapsible sections, ASCII file trees, contributing guidelines, roadmaps, and license formatting. Includes an LLM-optimized reference file for AI-assisted README generation.
+
+- Author: [Maxim Osovsky](https://www.wikidata.org/wiki/Q107189449)
+- URL: https://github.com/maximosovsky/readme-guidelines
+- License: CC BY-SA 4.0
+
+## Docs
+
+- [Full documentation](https://raw.githubusercontent.com/maximosovsky/readme-guidelines/main/llms-full.txt): Complete guidelines, structure template, anti-patterns, and badge examples

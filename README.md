@@ -37,6 +37,7 @@
 | **GitHub Alerts** | `> [!NOTE]` / `> [!WARNING]` — colored blocks instead of plain quotes | Supported since 2023, rendered on GitHub |
 | **Table of Contents** | Section navigation for long READMEs (or inline links) | For READMEs > 5 sections |
 | **No © sign** | Don't use the copyright symbol — cleaner and more modern. Author name always links to LinkedIn | `[Maxim Osovsky](https://linkedin.com/in/osovsky). Licensed under CC BY-SA 4.0.` |
+| **llms.txt files** | Machine-readable project summary for LLMs — `llms.txt` (short) + `llms-full.txt` (detailed) | [llms.txt standard](https://llmstxt.org/) |
 
 ---
 
@@ -52,6 +53,7 @@
 - **No license** — legally unclear whether the code can be used
 - **Dead links** — broken links to demo/docs kill trust, verify before pushing
 - **© sign** — don't use it, just name + license looks cleaner
+- **No llms.txt** — LLMs can't discover or understand the project without machine-readable docs
 
 ---
 
@@ -79,6 +81,7 @@
 11. 🤝 Contributing (fork → branch → PR)
     ---
 12. 📄 License + author
+13. llms.txt + llms-full.txt (root, plain text)
 ```
 
 ---
