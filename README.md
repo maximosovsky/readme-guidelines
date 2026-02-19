@@ -5,6 +5,7 @@
 ![Markdown](https://img.shields.io/badge/Markdown-000000?style=for-the-badge&logo=markdown&logoColor=white)
 ![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
 ![License](https://img.shields.io/badge/License-CC_BY--SA_4.0-lightgrey?style=for-the-badge)
+![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=for-the-badge)
 
 **Checklist and template for crafting beautiful GitHub READMEs**
 
@@ -144,11 +145,14 @@ jobs:
 
 ---
 
-## 📋 Template
+## 📋 Templates
 
 > **Start here** — copy, rename to `README.md`, fill in the `{PLACEHOLDERS}`.
 
-➡️ **[TEMPLATE.md](TEMPLATE.md)**
+| Template | Best for | Sections |
+|----------|----------|----------|
+| ➡️ **[TEMPLATE.md](TEMPLATE.md)** | Full projects | 12 sections — badges, features table, tech stack, file tree |
+| ➡️ **[TEMPLATE-minimal.md](TEMPLATE-minimal.md)** | Scripts, games, prototypes | 4 sections — badges, features, quick start, license |
 
 ---
 
@@ -172,6 +176,7 @@ Projects built with these guidelines:
 | [llms.txt](llms.txt) | Short project card for LLM discovery |
 | [llms-full.txt](llms-full.txt) | Complete guidelines as LLM instruction |
 | [README_GUIDELINES.md](README_GUIDELINES.md) | Structured rules for AI-assisted README generation |
+| [PROMPTS.md](PROMPTS.md) | Ready-to-use prompts: generate, audit, improve |
 
 ---
 
