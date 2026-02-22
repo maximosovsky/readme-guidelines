@@ -3,7 +3,7 @@ title: Your README Is Your Book Cover. Here's the Checklist I Use for 50+ Projec
 published: false
 description: A battle-tested checklist for crafting GitHub READMEs that look professional — and that AI can actually read.
 tags: github, opensource, documentation, productivity
-cover_image: https://raw.githubusercontent.com/maximosovsky/readme-guidelines/main/cover.jpg
+cover_image: https://raw.githubusercontent.com/maximosovsky/readme-guidelines/main/readme-cover.jpg
 ---
 
 Open any random GitHub repo. Chances are, the README is either a wall of text, a default `create-react-app` placeholder, or just empty.
