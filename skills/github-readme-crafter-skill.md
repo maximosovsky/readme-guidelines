@@ -75,11 +75,13 @@ Generate GitHub READMEs that follow proven structure from `readme-guidelines` (c
    - [ ] `---` horizontal dividers between every major section
    - [ ] Env vars hidden in `<details>`
 
-   **Content & Correctness**
-   - [ ] Quick Start ≤ 4 commands
-   - [ ] No `©` symbol anywhere
-   - [ ] License links to author LinkedIn
-   - [ ] Roadmap uses `- [x]` / `- [ ]` syntax
+    **Content & Correctness**
+    - [ ] Quick Start ≤ 4 commands
+    - [ ] No `©` symbol anywhere
+    - [ ] License links to author LinkedIn
+    - [ ] Roadmap uses `- [x]` / `- [ ]` syntax
+    - [ ] Language is English unless user explicitly requested otherwise
+    - [ ] Section headings remain in English even if prose is translated
 
    **Links & Extras**
    - [ ] All external links are HTTPS and alive (spot-check)
@@ -107,7 +109,7 @@ If the user explicitly requests to violate a hard rule, comply but append a `> [
 - **Horizontal dividers.** Separate every major section with `---`.
 - **GitHub Alerts.** Use `> [!NOTE]` / `> [!WARNING]` for important callouts instead of plain blockquotes where appropriate.
 - **GitHub About section.** After pushing README, set repo About: Description = tagline, Website = demo URL, Topics = 5–10 lowercase keywords.
-- **Language.** Default to English. If the user explicitly requests another language, translate all prose (tagline, concept, descriptions) but keep section headings and technical terms in English: `Quick Start`, `Features`, `Tech Stack`, `Contributing`, `License`, etc.
+- **Language.** Default to English. If the user writes in another language, this does NOT constitute an explicit request — always ask "Should the README be in English or [language]?". Only switch if confirmed. If the user explicitly requests another language, translate all prose (tagline, concept, descriptions) but keep section headings and technical terms in English: `Quick Start`, `Features`, `Tech Stack`, `Contributing`, `License`, etc.
 
 ## Anti-patterns (skill will refuse)
 
@@ -119,6 +121,8 @@ When refusing, explain why the request violates guidelines and suggest the corre
 - Leaving "TODO" or "coming soon" in features
 - Generic taglines like "A modern web application" — must be specific
 - Putting more than 4 commands in Quick Start without `<details>`
+- Writing README prose in non-English without explicit user request
+- Translating section headings (`Quick Start`, `Features`, etc.) to non-English
 
 **Structure**
 - Writing technical architecture docs inside README (move to `ARCHITECTURE.md`)
