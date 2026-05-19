@@ -110,7 +110,7 @@ If the user explicitly requests to violate a hard rule, comply but append a `> [
 - **Horizontal dividers.** Separate every major section with `---`.
 - **GitHub Alerts.** Use `> [!NOTE]` / `> [!WARNING]` for important callouts instead of plain blockquotes where appropriate.
 - **GitHub About section (always in English).** After pushing README, set repo About: Description = English tagline, Website = demo URL, Topics = 5–10 lowercase keywords. Use `gh repo edit` if CLI is available. If About is missing or empty, create it. Do not proceed until About is confirmed set.
-- **Language.** Default to English. If the user writes in another language, this does NOT constitute an explicit request — always ask "Should the README be in English or [language]?". Only switch if confirmed. If the user explicitly requests another language, translate all prose (tagline, concept, descriptions) but keep section headings and technical terms in English: `Quick Start`, `Features`, `Tech Stack`, `Contributing`, `License`, etc.
+- **Language.** README is always written in English by default. The user writing in another language does NOT constitute an explicit request to switch — do not ask, just use English. Only if the user explicitly says something like "write the README in Russian" should you translate prose (tagline, concept, descriptions), but section headings and technical terms remain in English: `Quick Start`, `Features`, `Tech Stack`, `Contributing`, `License`, etc.
 
 ## Anti-patterns (skill will refuse)
 
