@@ -86,13 +86,14 @@ Generate GitHub READMEs that follow proven structure from `readme-guidelines` (c
    **Links & Extras**
    - [ ] All external links are HTTPS and alive (spot-check)
    - [ ] `llms.txt` and `llms-full.txt` offered or generated
-   - [ ] GitHub About section reminder given
+   - [ ] GitHub About section set (Description, Topics) — always in English
+   - [ ] GitHub About section verified live (gh repo view or web check)
 
 8. **Return the complete README.md** as a single code block. Offer to also write `llms.txt` and `llms-full.txt` if the user wants LLM-ready docs.
 
 9. **Suggest CI setup.** If the user maintains the repo long-term, offer adding `.github/workflows/readme-lint.yml` from the guidelines to auto-check dead links.
 
-10. **Remind about GitHub About.** Tell the user to set: Description = tagline from README, Website = demo URL, Topics = 5–10 lowercase tech keywords.
+10. **Set GitHub About.** Use `gh repo edit` to set: Description = English tagline from README, Website = demo URL, Topics = 5–10 lowercase tech keywords. If `gh` is unavailable, instruct the user to set it manually. Verify it exists with `gh repo view` or by checking the repo page. Do not mark the task complete until About is confirmed set.
 
 ## Hard rules
 
@@ -108,7 +109,7 @@ If the user explicitly requests to violate a hard rule, comply but append a `> [
 - **Table of contents** for READMEs with > 5 top-level sections (`##` headings). Inline anchor links under header are enough for shorter ones.
 - **Horizontal dividers.** Separate every major section with `---`.
 - **GitHub Alerts.** Use `> [!NOTE]` / `> [!WARNING]` for important callouts instead of plain blockquotes where appropriate.
-- **GitHub About section.** After pushing README, set repo About: Description = tagline, Website = demo URL, Topics = 5–10 lowercase keywords.
+- **GitHub About section (always in English).** After pushing README, set repo About: Description = English tagline, Website = demo URL, Topics = 5–10 lowercase keywords. Use `gh repo edit` if CLI is available. If About is missing or empty, create it. Do not proceed until About is confirmed set.
 - **Language.** Default to English. If the user writes in another language, this does NOT constitute an explicit request — always ask "Should the README be in English or [language]?". Only switch if confirmed. If the user explicitly requests another language, translate all prose (tagline, concept, descriptions) but keep section headings and technical terms in English: `Quick Start`, `Features`, `Tech Stack`, `Contributing`, `License`, etc.
 
 ## Anti-patterns (skill will refuse)
@@ -134,6 +135,8 @@ When refusing, explain why the request violates guidelines and suggest the corre
 - No `llms.txt` + `llms-full.txt` in repo root
 - No CI checks for dead links
 - No GitHub About section filled (Description, URL, Topics)
+- GitHub About section written in non-English
+- GitHub About section not verified after setting
 
 ## Resources
 
