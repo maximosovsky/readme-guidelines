@@ -66,15 +66,15 @@ README — see below): `llms.txt` and `llms-full.txt`.
 Use GitHub Alerts (`> [!NOTE]`, `> [!WARNING]`) for caveats, and `<details>` to hide
 secondary info so the page stays short.
 
-## Language policy (English-first)
+## Language policy (English-first, single file by default)
 
-Default README output is **English** unless the user asks otherwise.
-- Primary file is always **`README.md` in English**.
-- A translation goes in **`README-<lang>.md`** (e.g. `README-ru.md`).
-- Put a language switcher near the top of **both** files:
-  - in `README.md`: `[🇷🇺 Русская версия](README-ru.md)`
-  - in `README-ru.md`: `[🇬🇧 English version](README.md)`
-- Keep both versions structurally identical when you update one.
+- The one and only README is **`README.md` in English**. Write English even if the source
+  project or the user's request is in another language.
+- **Do NOT create translations by default.** A `README-<lang>.md` is added **only when the
+  user explicitly asks** for that language. Never auto-generate one.
+- Only when a translation is explicitly requested: add a language switcher near the top of
+  **both** files (`[🇷🇺 Русская версия](README-ru.md)` ↔ `[🇬🇧 English version](README.md)`)
+  and keep the versions structurally in sync.
 
 ## Always generate llms.txt + llms-full.txt
 

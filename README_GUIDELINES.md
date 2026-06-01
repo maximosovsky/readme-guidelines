@@ -26,7 +26,7 @@ Use these rules when generating or reviewing a GitHub README.
 
 ## Formatting Rules
 
-- **English-first**: the primary `README.md` is always written in English. For other languages add a `README-<lang>.md` (e.g. `README-ru.md`) and a language switcher link near the top of both files (`[🇷🇺 Русская версия](README-ru.md)` ↔ `[🇬🇧 English version](README.md)`); keep the versions structurally in sync
+- **English-first, single file by default**: `README.md` is always written in English. Do **not** auto-create translations — add a `README-<lang>.md` (with a language switcher link in both files, kept in sync) **only when the user explicitly asks** for that language
 - Use `---` horizontal dividers between every major section
 - Use emoji prefixes on all `##` headings
 - Badges: always `style=for-the-badge` with `&logo=` parameter
