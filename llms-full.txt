@@ -56,6 +56,7 @@ A checklist and template for crafting professional GitHub READMEs. This guide co
 
 ## Formatting Rules
 
+- English-first: the primary `README.md` is always English. Translations go in `README-<lang>.md` with a language switcher link near the top of both files (`[🇷🇺 Русская версия](README-ru.md)` ↔ `[🇬🇧 English version](README.md)`), kept structurally in sync
 - Use `---` horizontal dividers between every major section
 - Use emoji prefixes on all `##` headings
 - Badges: always `style=for-the-badge` with `&logo=` parameter
@@ -72,6 +73,7 @@ A checklist and template for crafting professional GitHub READMEs. This guide co
 
 ## Anti-Patterns (never do)
 
+- Primary `README.md` not in English (put translations in `README-<lang>.md` with a switcher link)
 - Wall of text without formatting
 - No preview image
 - No badges

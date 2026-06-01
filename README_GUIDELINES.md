@@ -4,7 +4,7 @@ Use these rules when generating or reviewing a GitHub README.
 
 ## Structure (in order)
 
-1. `<div align="center">` — project emoji + name as `# heading`, shields.io badges (`style=for-the-badge`), bold one-line tagline, `</div>`
+1. `<div align="center">` — project emoji + name as `# heading`, shields.io badges (`style=for-the-badge`), bold one-line tagline, language switcher link if translated (`[🇷🇺 Русская версия](README-ru.md)`), `</div>`
 2. Blockquote `>` — project concept / philosophy, 1–2 sentences
 3. `<div align="center">` — preview image or GIF (`width="600"`), inline nav links (`Quick Start · Features · Docs`), `</div>`
 4. `---`
@@ -26,6 +26,7 @@ Use these rules when generating or reviewing a GitHub README.
 
 ## Formatting Rules
 
+- **English-first**: the primary `README.md` is always written in English. For other languages add a `README-<lang>.md` (e.g. `README-ru.md`) and a language switcher link near the top of both files (`[🇷🇺 Русская версия](README-ru.md)` ↔ `[🇬🇧 English version](README.md)`); keep the versions structurally in sync
 - Use `---` horizontal dividers between every major section
 - Use emoji prefixes on all `##` headings
 - Badges: always `style=for-the-badge` with `&logo=` parameter
@@ -41,6 +42,7 @@ Use these rules when generating or reviewing a GitHub README.
 
 ## Anti-Patterns (never do)
 
+- Primary `README.md` not in English — default to English; put translations in `README-<lang>.md` with a switcher link
 - Wall of text without formatting
 - No preview image
 - No badges
